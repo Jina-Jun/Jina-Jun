@@ -1,185 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jina's portfolio</title>
-    <meta name="description" content="Portfolio for publisher Jina">
-    <meta name="author" content="Jina Jun">
-    <link rel="icon" type="image/icon" href="imgs/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="scss/style.css">
+    <meta name="description" content="Portfolio for publisher Jina" />
+    <meta name="author" content="Jina Jun" />
+    <link rel="icon" type="image/icon" href="imgs/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="js/main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- s: navbar -->
     <nav id="navbar">
+      <div class="navbar__inner">
         <div class="navbar__logo">
-            <i class=""></i>
-            <a href="#">Jina</a>
+          <a href="#"><img src="/imgs/logo_white.svg" alt="navbar logo" /></a>
         </div>
         <ul class="navbar__menu">
-            <li class="navbar__menu__item">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">My work</li>
-            <li class="navbar__menu__item">Testiomnials</li>
-            <li class="navbar__menu__item">Contact</li>
+          <li class="navbar__menu__item active">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">My work</li>
+          <li class="navbar__menu__item">Testiomnials</li>
+          <li class="navbar__menu__item">Contact</li>
         </ul>
+      </div>
     </nav>
     <!-- e: navbar -->
     <!-- s: home -->
     <section id="home">
-        <img src="imgs/proflie.jpeg" alt="Jina's proflie photo" class="home__avatar">
-        <h1 class="home__title">Hello,<br>I'm Jina Jun</h1>
-        <h2 class="home__description">front-end developer with design experience.</h2>
-        <button class="home_contact">Contact Me</button>
+      <div class="home__inner">
+        <h1 class="home__title">Hey there, I’m a front-end web developer.</h1>
+        <h3 class="home__description">With 6 years design experience.</h3>
+        <button class="home__contact">Contact Me</button>
+      </div>
     </section>
     <!-- e: home -->
     <!-- s: about -->
-    <section id="about">
-        <h1>About me</h1>
-        <p>경력, 프론트엔드/백엔드에 대한 관심, 어떤 프로젝트를 진행하였는가를 포함하여 나를 어필하는 글을 두세문장으로 작성하기</p>
-        <div class="about__majors">
-            <div class="major">
-                <div class="major__icon">
-                    <i class=""></i>
-                </div>
-                <div class="major__title">Front-end</div>
-                <div class="major__description">HTML, CSS, Javascript, Typescript</div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class=""></i>
-                </div>
-                <div class="major__title">CSS Preprocessor</div>
-                <div class="major__description">SCSS</div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class=""></i>
-                </div>
-                <div class="major__title"></div>
-                <div class="major__description"></div>
-            </div>
+    <section id="about" class="section">
+      <h1>About me</h1>
+      <h3>
+        경력, 프론트엔드/백엔드에 대한 관심, 어떤 프로젝트를 진행하였는가를
+        포함하여 나를 어필하는 글을 두세문장으로 작성하기. Vestibulum leo
+        vestibulum viverra sed nunc commodo faucibus urna nullam. Purus rhoncus,
+        posuere fermentum nibh purus suspendisse.
+      </h3>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <img src="/imgs/about/design.png" />
+          </div>
+          <p class="major__title">Design</p>
+          <p class="major__description">
+            Adobe programs<br />Figma, Sketch, Zeplin
+          </p>
         </div>
-        <div class="about__jobs">
-            <div class="job">
-                <img src="" alt="Acroverse" class="job__logo">
-                <p class="job__name">Acroverse</p>
-                <p class="job__period">2012 Oct - 2018 Dec</p>
-            </div>
-            <div class="job">
-                <img src="" alt="Xenoimpact" class="job__logo">
-                <p class="job__name">Xenoimpact</p>
-                <p class="job__period">2018 May - 2018 Sep</p>
-            </div>
+        <div class="major">
+          <div class="major__icon">
+            <img src="/imgs/about/frontend.png" />
+          </div>
+          <p class="major__title">Front-end</p>
+          <p class="major__description">
+            HTML, CSS, Javascript, Typescript<br />jQuery, Bootstrap, Web APIs
+          </p>
         </div>
+        <div class="major">
+          <div class="major__icon">
+            <img src="/imgs/about/scss.png" />
+          </div>
+          <p class="major__title">SCSS</p>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img src="/imgs/about/edu.png" alt="Academy" class="job__icon" />
+          <div class="job__contents">
+            <p class="job__name">
+              Studied html, css and javascript at Korea IT academy
+            </p>
+            <p class="job__desctiption">
+              Front-end web developer training course
+            </p>
+            <p class="job__period">2021 Mar - 2021 Jun (3 months)</p>
+          </div>
+        </div>
+        <div class="job">
+          <img src="/imgs/about/career.png" alt="Acroverse" class="job__icon" />
+          <div class="job__contents">
+            <p class="job__name">Working at Acroverse as UX /UI designer</p>
+            <p class="job__description">
+              Collaborated with LG Electronics MC Division
+            </p>
+            <p class="job__period">
+              2012 Oct - 2018 Dec (6 Years and 3 months)
+            </p>
+          </div>
+        </div>
+        <div class="job">
+          <img
+            src="/imgs/about/career.png"
+            alt="Xenoimpact"
+            class="job__icon"
+          />
+          <div class="job__contents">
+            <p class="job__name">Working at Xenoimpact as UX /UI designer</p>
+            <p class="job__description">
+              Collaborated with Samsung Electronics Memory Division
+            </p>
+            <p class="job__period">2018 May - 2018 Sep (5 months)</p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- e: about -->
     <!-- s: skills -->
     <section id="skills">
+      <div class="skills__inner">
         <h1>Skills</h1>
-        <h2>Skill & Attributes</h2>
-        <p>새로운 것을 배우는 것에 관심이 있다. 팀 환경에서 일하거나 혼자서도 일할 수 있다. 계획을 세우고 시간을 지킨다. 스트레스가 있어도 충분히 적응할 수 있다. 등의 내용 작성하기</p>
+        <h2>Skills and Attributes</h2>
+        <h3>
+          새로운 것을 배우는 것에 관심이 있다. 팀 환경에서 일하거나 혼자서도
+          일할 수 있다. 계획을 세우고 시간을 지킨다. 스트레스가 있어도 충분히
+          적응할 수 있다. 등의 내용 작성하기
+        </h3>
         <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title">Skills</h3>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill_value"></div>
-                    </div>
+          <div class="skills__list">
+            <div class="skill__bar">
+              <div class="skill__value skill__html">
+                <div class="skill__description">
+                  <p>HTML</p>
+                  <p>98%</p>
                 </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>CSS</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill_value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>Javascript</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill_value"></div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>Typescript</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill_value"></div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="skillset__right">
-                <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>Visual studio code</span></li>
-                        <li><span>Atom</span></li>
-                        <li><span>Slack</span></li>
-                        <li><span>Github</span></li>
-                    </ul>
+            <div class="skill__bar">
+              <div class="skill__value skill__css">
+                <div class="skill__description">
+                  <p>CSS</p>
+                  <p>90%</p>
                 </div>
+              </div>
             </div>
+            <div class="skill__bar">
+              <div class="skill__value skill__scss">
+                <div class="skill__description">
+                  <p>SCSS</p>
+                  <p>70%</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value skill__javascript">
+                <div class="skill__description">
+                  <p>Javascript</p>
+                  <p>80%</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value skill__typescript">
+                <div class="skill__description">
+                  <p>Typescript</p>
+                  <p>30%</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value skill__jquery">
+                <div class="skill__description">
+                  <p>jQuery</p>
+                  <p>80%</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="tools">
+          <p class="skillset__title">Tools</p>
+          <p>
+            Visual studio code, Atom, Slack, Github<br />Photoshop, Illustrator,
+            InDesign, Premiere Pro, Dreamweaver, XD, Figma, Sketch, Zeplin<br />
+            Word, Excel, PowerPoint
+          </p>
+        </div>
+      </div>
     </section>
     <!-- e: skills -->
     <!-- s: work -->
-    <section id="work">
-        <h1>My work</h1>
-        <h3>Projects</h3>
-        <div class="work__categories">
-            <button class="category_btn">All<span class="category__count">0</span></button>
-            <button class="category_btn">Front-end<span class="category__count"></span>0</button>
-            <button class="category_btn">Design<span class="category__count"></span>0</button>
-        </div>
-        <div class="work__projects">
-            <a href="https://github.com/jina-jun/portfolio.git" class="project" target="blank">
-                <img src="" alt="">
-                <div class="project__description">
-                    <h3>Jina's portfolio</h3>
-                    <span>HTML, SCSS and Javascript</span>
-                </div>
-            </a>
-        </div>
+    <section id="work" class="section">
+      <h1>My work</h1>
+      <!-- <h2>Projects</h2> -->
+      <div class="work__categories">
+        <a class="category__btn active"
+          >All<span class="category__count">0</span></a
+        >
+        <a class="category__btn"
+          >Front-end<span class="category__count">0</span></a
+        >
+        <a class="category__btn"
+          >Design<span class="category__count">0</span></a
+        >
+      </div>
+      <div class="work__projects">
+        <a
+          href="https://github.com/jina-jun/portfolio.git"
+          class="project"
+          target="blank"
+        >
+          <img
+            class="project__img"
+            src="/imgs/projects/project_portfolio.png"
+            target="blank"
+            alt="Jina's portfolio"
+          />
+          <div class="project__description">
+            <p>Jina's portfolio</p>
+            <p>HTML, SCSS and Javascript</p>
+          </div>
+        </a>
+        <a
+          href="https://github.com/jina-jun/zero-waste.git"
+          class="project"
+          target="blank"
+        >
+          <img
+            class="project__img"
+            src="/imgs/projects/project_1day1quest.png"
+            target="blank"
+            alt="1D1Q - Related to zero-waist"
+          />
+          <div class="project__description">
+            <p>1D1Q - Related to zero-waist</p>
+            <p>HTML, CSS, jQuery and Web APIs</p>
+          </div>
+        </a>
+      </div>
     </section>
     <!-- e: work -->
-    <!-- s: testiomnials -->
+    <!-- s: testimonials -->
     <section id="testimonials">
+      <div class="testimonials_inner">
         <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
+        <h2>See what they say about me</h2>
         <div class="testimonials">
-            <div class="testimonial">
-                <img src="" alt="People" class="testimonial__avatar">
-                <div class="testimonial__speech-bubble">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente error ratione corrupti asperiores libero quia provident exercitationem. Voluptatibus quidem eveniet tempore quod eius nulla totam soluta! Perspiciatis, modi aperiam.</p>
-                    <p class="name"><a href="">Seo</a> / Acroverse</p>
-                </div>
+          <div class="testimonial">
+            <img
+              src="/imgs/testimonial/acro.png"
+              alt="People"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__speech-bubble">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Debitis sapiente error ratione corrupti asperiores libero quia
+                provident exercitationem. Voluptatibus quidem eveniet tempore
+                quod eius nulla totam soluta! Perspiciatis, modi aperiam.
+              </p>
+              <p class="name">Seo / Acroverse</p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- e: testiomnials -->
+    <!-- e: testimonials -->
     <!-- s: contact -->
-    <section id="contact">
-        <h1 class="contact__title">Let's talk</h1>
-        <h2 class="contact__email">rlanij13@gmail.com</h2>
-        <div class="contact__links">
-            <a href="https://github.com/jina-jun" target="blank">
-                <i class=""></i>
-            </a>
-        </div>
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <p class="contact__email">rlanij13@gmail.com</p>
+      <div class="contact__links">
+        <a href="https://github.com/jina-jun" target="blank">
+          <img src="/imgs/github.svg" alt="Github" />
+        </a>
+      </div>
     </section>
     <!-- e: contact -->
-</body>
+  </body>
 </html>
