@@ -365,6 +365,23 @@ p + p {
   transform: scale(1.1);
 }
 
+/* scroll */
+.arrow-up-btn {
+  width: 32px;
+  height: 32px;
+  background: url(/imgs/arrow_up.png);
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-in;
+}
+.arrow-up-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* for below 768px screen width */
 @media screen and (max-width: 768px) {
   /* navbar */
