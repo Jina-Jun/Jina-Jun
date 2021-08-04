@@ -116,7 +116,7 @@ p + p {
   color: var(--color-white-dark);
   cursor: pointer;
 }
-.navbar__menu__item.active,
+.navbar__menu__item.selected,
 .navbar__menu__item:hover {
   color: var(--color-white);
   text-decoration: underline;
@@ -265,10 +265,10 @@ p + p {
   cursor: pointer;
   position: relative;
 }
-.category__btn.active {
+.category__btn.selected {
   font-weight: var(--weight-semi-bold);
 }
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   color: var(--color-primary);
   text-decoration: underline;
@@ -394,6 +394,9 @@ p + p {
 /* for below 768px screen width */
 @media screen and (max-width: 768px) {
   /* navbar */
+  #navbar {
+    background: var(--color-primary-dark);
+  }
   .navbar__toggle-btn {
     display: block;
   }
@@ -406,6 +409,9 @@ p + p {
     text-align: center;
     width: 100%;
     display: none;
+  }
+  .navbar__menu.open {
+    display: block;
   }
   .navbar__menu__item {
     line-height: 32px;

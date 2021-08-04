@@ -17,7 +17,14 @@ navbarMenu.addEventListener('click', (event) => {
   const target = event.target;
   const link = target.dataset.link;
   if (link == null) return;
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
+});
+
+// navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 // handle click on 'contact me' button on home
@@ -57,6 +64,13 @@ workBtnContainer.addEventListener('click', (event) => {
   const filter =
     event.target.dataset.filter || event.target.parentNode.dataset.filter;
   if (filter == null) return;
+
+  //  remove selection from the previous item and select the new one
+  const active = document.querySelector('.category__btn.selected');
+  active.classList.remove('selected');
+  const target =
+    event.target.nodeName === 'A' ? event.target : event.target.parentNode;
+  target.classList.add('selected');
 
   projectContainer.classList.add('anim-out');
   setTimeout(() => {
