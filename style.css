@@ -86,7 +86,8 @@ p + p {
 
 /* navbar */
 #navbar {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   background-color: var(--color-primary);
   padding: 16px 32px;
@@ -133,7 +134,7 @@ p + p {
 
 /* home */
 #home {
-  padding: 120px 32px;
+  padding: 180px 32px 120px;
   background: var(--color-primary);
 }
 #home h1 {
@@ -256,6 +257,8 @@ p + p {
 /* work */
 .work__categories {
   padding: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 .category__btn {
   font-size: var(--font-small);
@@ -296,7 +299,6 @@ p + p {
 }
 .project {
   width: 334px;
-  height: 200px;
   margin: 16px;
   border: 1px solid var(--color-white-dark);
   position: relative;
@@ -307,7 +309,6 @@ p + p {
 .project__img {
   max-width: 100%;
   max-height: 100%;
-  margin-bottom: 20px;
 }
 .project__description {
   position: absolute;
@@ -421,5 +422,25 @@ p + p {
   .about__majors {
     flex-direction: column;
     align-items: center;
+  }
+
+  /* work */
+  .category__btn {
+    margin: 0 8px;
+  }
+
+  /* testimonial */
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial__avatar {
+    margin: 0 0 10px;
+  }
+
+  /* scroll */
+  .arrow-up-btn {
+    bottom: 12px;
+    right: 12px;
   }
 }
