@@ -302,6 +302,7 @@ p + p {
   margin: 16px;
   border: 1px solid var(--color-white-dark);
   position: relative;
+  font-size: 0;
 }
 .project.invisible {
   display: none;
