@@ -90,7 +90,7 @@ p + p {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: var(--color-primary);
+  background: var(--color-primary);
   padding: 16px 32px;
   z-index: 1;
 }
@@ -111,15 +111,15 @@ p + p {
 .navbar__menu {
   display: flex;
 }
-.navbar__menu__item {
+.navbar__menu-item {
   font-size: var(--font-small);
   font-weight: var(--weight-light);
   padding: 0 16px;
   color: var(--color-white-dark);
   cursor: pointer;
 }
-.navbar__menu__item.selected,
-.navbar__menu__item:hover {
+.navbar__menu-item.selected,
+.navbar__menu-item:hover {
   color: var(--color-white);
   text-decoration: underline;
 }
